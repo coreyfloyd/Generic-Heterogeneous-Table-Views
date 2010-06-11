@@ -35,6 +35,7 @@
 		44CA36710FA79190003F4AAD /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CA366E0FA79190003F4AAD /* green.png */; };
 		44CA378B0FA7D87F003F4AAD /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA378A0FA7D87F003F4AAD /* CreditsViewController.m */; };
 		44CA378E0FA7D90D003F4AAD /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 44CA378D0FA7D90D003F4AAD /* credits.html */; };
+		C41F659A11C2AAC50028CF7B /* FJSTextCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41F659711C2AAC50028CF7B /* FJSTextCellController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,8 @@
 		44CA378A0FA7D87F003F4AAD /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
 		44CA378D0FA7D90D003F4AAD /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credits.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C41F659611C2AAC50028CF7B /* FJSTextCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSTextCellController.h; sourceTree = "<group>"; };
+		C41F659711C2AAC50028CF7B /* FJSTextCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSTextCellController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C41F659511C2AAB70028CF7B /* FJS Additions */,
 				44CA35500FA77BC3003F4AAD /* Generic Table Views */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
@@ -235,6 +239,23 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		C41F659511C2AAB70028CF7B /* FJS Additions */ = {
+			isa = PBXGroup;
+			children = (
+				C41F659E11C2AAE10028CF7B /* Cell Controllers */,
+			);
+			name = "FJS Additions";
+			sourceTree = "<group>";
+		};
+		C41F659E11C2AAE10028CF7B /* Cell Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C41F659611C2AAC50028CF7B /* FJSTextCellController.h */,
+				C41F659711C2AAC50028CF7B /* FJSTextCellController.m */,
+			);
+			name = "Cell Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,6 +340,7 @@
 				44CA35CD0FA783C2003F4AAD /* SampleViewController.m in Sources */,
 				44CA35FC0FA786FD003F4AAD /* SampleAdvancedViewController.m in Sources */,
 				44CA378B0FA7D87F003F4AAD /* CreditsViewController.m in Sources */,
+				C41F659A11C2AAC50028CF7B /* FJSTextCellController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
