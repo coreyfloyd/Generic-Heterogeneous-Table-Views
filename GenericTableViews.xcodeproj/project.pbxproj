@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* GenericTableViewsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GenericTableViewsAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E55F0DE3E45000AC0155 /* RootViewController.xib */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		44CA356F0FA77BC3003F4AAD /* IFLinkCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35540FA77BC3003F4AAD /* IFLinkCellController.m */; };
+		44CA35700FA77BC3003F4AAD /* IFTextCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35560FA77BC3003F4AAD /* IFTextCellController.m */; };
+		44CA35710FA77BC3003F4AAD /* IFSwitchCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35580FA77BC3003F4AAD /* IFSwitchCellController.m */; };
+		44CA35720FA77BC3003F4AAD /* IFButtonCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA355A0FA77BC3003F4AAD /* IFButtonCellController.m */; };
+		44CA35730FA77BC3003F4AAD /* IFChoiceCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA355C0FA77BC3003F4AAD /* IFChoiceCellController.m */; };
+		44CA35740FA77BC3003F4AAD /* IFChoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA355E0FA77BC3003F4AAD /* IFChoiceTableViewController.m */; };
+		44CA35750FA77BC3003F4AAD /* IFValueCellController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35600FA77BC3003F4AAD /* IFValueCellController.m */; };
+		44CA35760FA77BC3003F4AAD /* IFNamedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35620FA77BC3003F4AAD /* IFNamedImage.m */; };
+		44CA35770FA77BC3003F4AAD /* IFControlTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35640FA77BC3003F4AAD /* IFControlTableViewCell.m */; };
+		44CA35780FA77BC3003F4AAD /* IFTemporaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35680FA77BC3003F4AAD /* IFTemporaryModel.m */; };
+		44CA35790FA77BC3003F4AAD /* IFPreferencesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA356A0FA77BC3003F4AAD /* IFPreferencesModel.m */; };
+		44CA357A0FA77BC3003F4AAD /* IFGenericTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA356C0FA77BC3003F4AAD /* IFGenericTableViewController.m */; };
+		44CA357B0FA77BC3003F4AAD /* IFTextViewTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA356E0FA77BC3003F4AAD /* IFTextViewTableView.m */; };
+		44CA35CD0FA783C2003F4AAD /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35CB0FA783C2003F4AAD /* SampleViewController.m */; };
+		44CA35FC0FA786FD003F4AAD /* SampleAdvancedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA35FA0FA786FD003F4AAD /* SampleAdvancedViewController.m */; };
+		44CA366F0FA79190003F4AAD /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CA366C0FA79190003F4AAD /* red.png */; };
+		44CA36700FA79190003F4AAD /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CA366D0FA79190003F4AAD /* blue.png */; };
+		44CA36710FA79190003F4AAD /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CA366E0FA79190003F4AAD /* green.png */; };
+		44CA378B0FA7D87F003F4AAD /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CA378A0FA7D87F003F4AAD /* CreditsViewController.m */; };
+		44CA378E0FA7D90D003F4AAD /* credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 44CA378D0FA7D90D003F4AAD /* credits.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* GenericTableViewsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTableViewsAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GenericTableViewsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericTableViewsAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* GenericTableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericTableViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E55F0DE3E45000AC0155 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		28A0AAE50D9B0CCF005BE974 /* GenericTableViews_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTableViews_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44CA35520FA77BC3003F4AAD /* IFCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFCellController.h; sourceTree = "<group>"; };
+		44CA35530FA77BC3003F4AAD /* IFLinkCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLinkCellController.h; sourceTree = "<group>"; };
+		44CA35540FA77BC3003F4AAD /* IFLinkCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFLinkCellController.m; sourceTree = "<group>"; };
+		44CA35550FA77BC3003F4AAD /* IFTextCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTextCellController.h; sourceTree = "<group>"; };
+		44CA35560FA77BC3003F4AAD /* IFTextCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTextCellController.m; sourceTree = "<group>"; };
+		44CA35570FA77BC3003F4AAD /* IFSwitchCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFSwitchCellController.h; sourceTree = "<group>"; };
+		44CA35580FA77BC3003F4AAD /* IFSwitchCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFSwitchCellController.m; sourceTree = "<group>"; };
+		44CA35590FA77BC3003F4AAD /* IFButtonCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFButtonCellController.h; sourceTree = "<group>"; };
+		44CA355A0FA77BC3003F4AAD /* IFButtonCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFButtonCellController.m; sourceTree = "<group>"; };
+		44CA355B0FA77BC3003F4AAD /* IFChoiceCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFChoiceCellController.h; sourceTree = "<group>"; };
+		44CA355C0FA77BC3003F4AAD /* IFChoiceCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFChoiceCellController.m; sourceTree = "<group>"; };
+		44CA355D0FA77BC3003F4AAD /* IFChoiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFChoiceTableViewController.h; sourceTree = "<group>"; };
+		44CA355E0FA77BC3003F4AAD /* IFChoiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFChoiceTableViewController.m; sourceTree = "<group>"; };
+		44CA355F0FA77BC3003F4AAD /* IFValueCellController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFValueCellController.h; sourceTree = "<group>"; };
+		44CA35600FA77BC3003F4AAD /* IFValueCellController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFValueCellController.m; sourceTree = "<group>"; };
+		44CA35610FA77BC3003F4AAD /* IFNamedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFNamedImage.h; sourceTree = "<group>"; };
+		44CA35620FA77BC3003F4AAD /* IFNamedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFNamedImage.m; sourceTree = "<group>"; };
+		44CA35630FA77BC3003F4AAD /* IFControlTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFControlTableViewCell.h; sourceTree = "<group>"; };
+		44CA35640FA77BC3003F4AAD /* IFControlTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFControlTableViewCell.m; sourceTree = "<group>"; };
+		44CA35660FA77BC3003F4AAD /* IFCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFCellModel.h; sourceTree = "<group>"; };
+		44CA35670FA77BC3003F4AAD /* IFTemporaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTemporaryModel.h; sourceTree = "<group>"; };
+		44CA35680FA77BC3003F4AAD /* IFTemporaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTemporaryModel.m; sourceTree = "<group>"; };
+		44CA35690FA77BC3003F4AAD /* IFPreferencesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFPreferencesModel.h; sourceTree = "<group>"; };
+		44CA356A0FA77BC3003F4AAD /* IFPreferencesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFPreferencesModel.m; sourceTree = "<group>"; };
+		44CA356B0FA77BC3003F4AAD /* IFGenericTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFGenericTableViewController.h; sourceTree = "<group>"; };
+		44CA356C0FA77BC3003F4AAD /* IFGenericTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFGenericTableViewController.m; sourceTree = "<group>"; };
+		44CA356D0FA77BC3003F4AAD /* IFTextViewTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTextViewTableView.h; sourceTree = "<group>"; };
+		44CA356E0FA77BC3003F4AAD /* IFTextViewTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTextViewTableView.m; sourceTree = "<group>"; };
+		44CA35CB0FA783C2003F4AAD /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
+		44CA35CC0FA783C2003F4AAD /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		44CA35FA0FA786FD003F4AAD /* SampleAdvancedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleAdvancedViewController.m; sourceTree = "<group>"; };
+		44CA35FB0FA786FD003F4AAD /* SampleAdvancedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleAdvancedViewController.h; sourceTree = "<group>"; };
+		44CA366C0FA79190003F4AAD /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = Images/red.png; sourceTree = "<group>"; };
+		44CA366D0FA79190003F4AAD /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = Images/blue.png; sourceTree = "<group>"; };
+		44CA366E0FA79190003F4AAD /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = Images/green.png; sourceTree = "<group>"; };
+		44CA37890FA7D87F003F4AAD /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		44CA378A0FA7D87F003F4AAD /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
+		44CA378D0FA7D90D003F4AAD /* credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credits.html; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44CA35500FA77BC3003F4AAD /* Generic Table Views */,
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* GenericTableViewsAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GenericTableViewsAppDelegate.m */,
+				44CA35CC0FA783C2003F4AAD /* SampleViewController.h */,
+				44CA35CB0FA783C2003F4AAD /* SampleViewController.m */,
+				44CA35FB0FA786FD003F4AAD /* SampleAdvancedViewController.h */,
+				44CA35FA0FA786FD003F4AAD /* SampleAdvancedViewController.m */,
+				44CA37890FA7D87F003F4AAD /* CreditsViewController.h */,
+				44CA378A0FA7D87F003F4AAD /* CreditsViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* GenericTableViews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* GenericTableViews_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44CA366B0FA7917C003F4AAD /* Images */,
+				44CA378D0FA7D90D003F4AAD /* credits.html */,
+				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44CA35500FA77BC3003F4AAD /* Generic Table Views */ = {
+			isa = PBXGroup;
+			children = (
+				44CA356B0FA77BC3003F4AAD /* IFGenericTableViewController.h */,
+				44CA356C0FA77BC3003F4AAD /* IFGenericTableViewController.m */,
+				44CA356D0FA77BC3003F4AAD /* IFTextViewTableView.h */,
+				44CA356E0FA77BC3003F4AAD /* IFTextViewTableView.m */,
+				44CA35650FA77BC3003F4AAD /* Models */,
+				44CA35510FA77BC3003F4AAD /* Cell Controllers */,
+			);
+			name = "Generic Table Views";
+			sourceTree = "<group>";
+		};
+		44CA35510FA77BC3003F4AAD /* Cell Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				44CA35520FA77BC3003F4AAD /* IFCellController.h */,
+				44CA35530FA77BC3003F4AAD /* IFLinkCellController.h */,
+				44CA35540FA77BC3003F4AAD /* IFLinkCellController.m */,
+				44CA35550FA77BC3003F4AAD /* IFTextCellController.h */,
+				44CA35560FA77BC3003F4AAD /* IFTextCellController.m */,
+				44CA35570FA77BC3003F4AAD /* IFSwitchCellController.h */,
+				44CA35580FA77BC3003F4AAD /* IFSwitchCellController.m */,
+				44CA35590FA77BC3003F4AAD /* IFButtonCellController.h */,
+				44CA355A0FA77BC3003F4AAD /* IFButtonCellController.m */,
+				44CA355B0FA77BC3003F4AAD /* IFChoiceCellController.h */,
+				44CA355C0FA77BC3003F4AAD /* IFChoiceCellController.m */,
+				44CA355D0FA77BC3003F4AAD /* IFChoiceTableViewController.h */,
+				44CA355E0FA77BC3003F4AAD /* IFChoiceTableViewController.m */,
+				44CA355F0FA77BC3003F4AAD /* IFValueCellController.h */,
+				44CA35600FA77BC3003F4AAD /* IFValueCellController.m */,
+				44CA35610FA77BC3003F4AAD /* IFNamedImage.h */,
+				44CA35620FA77BC3003F4AAD /* IFNamedImage.m */,
+				44CA35630FA77BC3003F4AAD /* IFControlTableViewCell.h */,
+				44CA35640FA77BC3003F4AAD /* IFControlTableViewCell.m */,
+			);
+			name = "Cell Controllers";
+			sourceTree = "<group>";
+		};
+		44CA35650FA77BC3003F4AAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44CA35660FA77BC3003F4AAD /* IFCellModel.h */,
+				44CA35670FA77BC3003F4AAD /* IFTemporaryModel.h */,
+				44CA35680FA77BC3003F4AAD /* IFTemporaryModel.m */,
+				44CA35690FA77BC3003F4AAD /* IFPreferencesModel.h */,
+				44CA356A0FA77BC3003F4AAD /* IFPreferencesModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		44CA366B0FA7917C003F4AAD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				44CA366C0FA79190003F4AAD /* red.png */,
+				44CA366E0FA79190003F4AAD /* green.png */,
+				44CA366D0FA79190003F4AAD /* blue.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* GenericTableViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GenericTableViews" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenericTableViews;
+			productName = GenericTableViews;
+			productReference = 1D6058910D05DD3D006BFB54 /* GenericTableViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GenericTableViews" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* GenericTableViews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				2899E5600DE3E45000AC0155 /* RootViewController.xib in Resources */,
+				44CA366F0FA79190003F4AAD /* red.png in Resources */,
+				44CA36700FA79190003F4AAD /* blue.png in Resources */,
+				44CA36710FA79190003F4AAD /* green.png in Resources */,
+				44CA378E0FA7D90D003F4AAD /* credits.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* GenericTableViewsAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				44CA356F0FA77BC3003F4AAD /* IFLinkCellController.m in Sources */,
+				44CA35700FA77BC3003F4AAD /* IFTextCellController.m in Sources */,
+				44CA35710FA77BC3003F4AAD /* IFSwitchCellController.m in Sources */,
+				44CA35720FA77BC3003F4AAD /* IFButtonCellController.m in Sources */,
+				44CA35730FA77BC3003F4AAD /* IFChoiceCellController.m in Sources */,
+				44CA35740FA77BC3003F4AAD /* IFChoiceTableViewController.m in Sources */,
+				44CA35750FA77BC3003F4AAD /* IFValueCellController.m in Sources */,
+				44CA35760FA77BC3003F4AAD /* IFNamedImage.m in Sources */,
+				44CA35770FA77BC3003F4AAD /* IFControlTableViewCell.m in Sources */,
+				44CA35780FA77BC3003F4AAD /* IFTemporaryModel.m in Sources */,
+				44CA35790FA77BC3003F4AAD /* IFPreferencesModel.m in Sources */,
+				44CA357A0FA77BC3003F4AAD /* IFGenericTableViewController.m in Sources */,
+				44CA357B0FA77BC3003F4AAD /* IFTextViewTableView.m in Sources */,
+				44CA35CD0FA783C2003F4AAD /* SampleViewController.m in Sources */,
+				44CA35FC0FA786FD003F4AAD /* SampleAdvancedViewController.m in Sources */,
+				44CA378B0FA7D87F003F4AAD /* CreditsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GenericTableViews_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = GenericTableViews;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GenericTableViews_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = GenericTableViews;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator2.2.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator2.2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GenericTableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GenericTableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
