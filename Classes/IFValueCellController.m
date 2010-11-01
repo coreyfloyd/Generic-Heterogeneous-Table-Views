@@ -69,11 +69,11 @@
     IFControlTableViewCell *cell = (IFControlTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 	if (cell == nil)
 	{
-		cell = [[[IFControlTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];
+		cell = [[[IFControlTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
 		
     }
 	
-	cell.font = [UIFont boldSystemFontOfSize:17.0f];
+	cell.textLabel.font = [UIFont boldSystemFontOfSize:17.0f];
 	cell.accessoryType = UITableViewCellAccessoryNone;
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	cell.indentationLevel = indentationLevel;
@@ -82,9 +82,9 @@
 	// pixels and changing the property has no effect on the indentation. We'll use 20.0f here
 	// and cross our fingers that this doesn't screw things up in the future.
 	
-	cell.text = label;
+	cell.textLabel.text = label;
 
-	CGSize labelSize = [label sizeWithFont:cell.font];
+	CGSize labelSize = [label sizeWithFont:cell.textLabel.font];
 	CGFloat viewWidth = 255.0f - (labelSize.width + (20.0f * indentationLevel));
 	
 	id value = [model objectForKey:key];

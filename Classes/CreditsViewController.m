@@ -26,7 +26,7 @@
 
 	NSString *path = [NSString pathWithComponents:[NSArray arrayWithObjects:[[NSBundle mainBundle] resourcePath], @"credits.html", nil]];
 	NSURL *baseURL = [[[NSURL alloc] initFileURLWithPath:path] autorelease];
-	[(UIWebView *)self.view loadHTMLString:[NSString stringWithContentsOfURL:baseURL] baseURL:baseURL];
+	[(UIWebView *)self.view loadHTMLString:[NSString stringWithContentsOfURL:baseURL encoding:NSUTF8StringEncoding error:nil] baseURL:baseURL];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

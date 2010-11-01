@@ -57,11 +57,11 @@
     IFControlTableViewCell *cell = (IFControlTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 	if (cell == nil)
 	{
-		cell = [[[IFControlTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];		
+		cell = [[[IFControlTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];		
     }
 	
-	cell.font = [UIFont boldSystemFontOfSize:17.0f];
-	cell.text = label;
+	cell.textLabel.font = [UIFont boldSystemFontOfSize:17.0f];
+	cell.textLabel.text = label;
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	
 	CGRect frame = CGRectMake(0.0, 0.0, 94.0, 27.0);

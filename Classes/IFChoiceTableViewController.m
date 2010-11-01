@@ -69,40 +69,40 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil)
 	{
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
     }
     
 	NSUInteger row = [indexPath row];
 	id choice = [choices objectAtIndex:row];
 	if ([choice isKindOfClass:[NSString class]])
 	{
-		cell.text = choice;
-		cell.image = nil;
+		cell.textLabel.text = choice;
+		cell.imageView.image = nil;
 	}
 	else if ([choice isKindOfClass:[IFNamedImage class]])
 	{
 		UIImage *image = [choice image];
 		CGSize imageSize = [image size];
 		
-		cell.image = image;
+		cell.imageView.image = image;
 		if (imageSize.width < 44.0f)
 		{
-			cell.text = [choice name];
+			cell.textLabel.text = [choice name];
 		}
 		else
 		{
-			cell.text = nil;
+			cell.textLabel.text = nil;
 		}
 	}
 	else if ([choice isKindOfClass:[UIImage class]])
 	{
-		cell.image = choice;
-		cell.text = nil;
+		cell.imageView.image = choice;
+		cell.textLabel.text = nil;
 	}
 	else
 	{
-		cell.image = nil;
-		cell.text = nil;
+		cell.imageView.image = nil;
+		cell.textLabel.text = nil;
 	}
 
 	if (row == [[model objectForKey:key] intValue])

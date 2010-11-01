@@ -17,9 +17,9 @@
 
 - (id)initWithFrame:(CGRect)aRect reuseIdentifier:(NSString *)identifier
 {
-	if (self = [super initWithFrame:aRect reuseIdentifier:identifier])
+	if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier])
 	{
-		self.hidesAccessoryWhenEditing = NO;
+		//self.hidesAccessoryWhenEditing = NO;
 	}
 	return self;
 }

@@ -63,6 +63,14 @@
 	}
 }
 
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+	if (target && [target respondsToSelector:action])
+	{
+		[target performSelector:action withObject:self];
+	}
+}
+
 //
 // tableView:cellForRowAtIndexPath:
 //
@@ -75,24 +83,22 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 	if (cell == nil)
 	{
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
     }
 	
-	cell.text = label;
-	cell.font = [UIFont boldSystemFontOfSize:17.0f];
+	cell.textLabel.text = label;
+	cell.textLabel.font = [UIFont boldSystemFontOfSize:17.0f];
 	cell.accessoryType = accessoryType;
-	cell.target = target;
-	cell.accessoryAction = action;
 	if (accessoryType == UITableViewCellAccessoryDetailDisclosureButton)
 	{
 		cell.selectionStyle = UITableViewCellSelectionStyleNone;
-		cell.textAlignment = UITextAlignmentLeft;
+		cell.textLabel.textAlignment = UITextAlignmentLeft;
 	}
 	else
 	{
 		// NOTE: In the 2.2 firmware, the alignment of the text on the button is wrong. Since the problem was
 		// only visual and was fixed in the 2.2.1 firmware, we're just going live with it.
-		cell.textAlignment = UITextAlignmentCenter;
+		cell.textLabel.textAlignment = UITextAlignmentCenter;
 	}
 	
     return cell;

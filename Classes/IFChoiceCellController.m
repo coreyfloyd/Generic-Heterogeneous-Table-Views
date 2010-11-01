@@ -93,11 +93,11 @@
     IFControlTableViewCell *cell = (IFControlTableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 	if (cell == nil)
 	{
-		cell = [[[IFControlTableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];
+		cell = [[[IFControlTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
 		
     }
 	
-	cell.font = [UIFont boldSystemFontOfSize:17.0f];
+	cell.textLabel.font = [UIFont boldSystemFontOfSize:17.0f];
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	cell.indentationLevel = indentationLevel;
 	
@@ -112,21 +112,21 @@
 		id choice = [choices objectAtIndex:[[model objectForKey:key] intValue]];
 		if ([choice isKindOfClass:[NSString class]])
 		{
-			cell.text = choice;
+			cell.textLabel.text = choice;
 		}
 		else if ([choice isKindOfClass:[IFNamedImage class]])
 		{
-			cell.text = [choice name];
-			cell.image = [choice image];
+			cell.textLabel.text = [choice name];
+			cell.imageView.image = [choice image];
 		}
 	}
 	else
 	{
 		// choice is subview in cell
 
-		cell.text = label;
+		cell.textLabel.text = label;
 
-		CGSize labelSize = [label sizeWithFont:cell.font];
+		CGSize labelSize = [label sizeWithFont:cell.textLabel.font];
 		CGFloat viewWidth = 255.0f - (labelSize.width + (20.0f * indentationLevel));
 		
 		NSUInteger choiceIndex = [[model objectForKey:key] intValue];

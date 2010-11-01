@@ -74,12 +74,12 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
 	if (cell == nil)
 	{
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:cellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier] autorelease];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
 	
-	cell.text = label;
-	cell.font = [UIFont boldSystemFontOfSize:17.0f];
+	cell.textLabel.text = label;
+	cell.textLabel.font = [UIFont boldSystemFontOfSize:17.0f];
 	
     return cell;
 }

@@ -143,6 +143,21 @@
 	}
 }
 
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+{
+	if (!tableGroups)
+	{
+		[self constructTableGroups];
+	}
+	
+	NSObject<IFCellController> *cellData =
+	[[tableGroups objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+	if ([cellData respondsToSelector:@selector(tableView:accessoryButtonTappedForRowWithIndexPath:)])
+	{
+		[cellData tableView:tableView accessoryButtonTappedForRowWithIndexPath:indexPath];
+	}
+}
+
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
 	if (!tableGroups)
