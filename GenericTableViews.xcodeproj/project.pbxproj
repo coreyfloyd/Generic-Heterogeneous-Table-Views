@@ -359,6 +359,7 @@
 				GCC_PREFIX_HEADER = GenericTableViews_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = GenericTableViews;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -371,6 +372,7 @@
 				GCC_PREFIX_HEADER = GenericTableViews_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = GenericTableViews;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
